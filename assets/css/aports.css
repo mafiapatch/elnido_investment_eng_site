@@ -3314,7 +3314,7 @@ ul {
 .brand-one {
   position: relative;
   display: block;
-  padding: 60px 0 60px;
+  padding: 0px;
   background-color: white;
   z-index: 1;
 }
