@@ -3003,7 +3003,7 @@ ul {
 .neighborhoods {
   position: relative;
   display: block;
-  background-color: var(--aports-black);
+  background-color: #EDEADB;
   overflow: hidden;
   padding: 0 0 170px;
   margin-top: 0px;
@@ -3025,7 +3025,7 @@ ul {
 }
 
 .neighborhoods .section-title__title {
-  color: var(--aports-white);
+  color: black;
 }
 
 .neighborhoods__left {
@@ -3315,7 +3315,7 @@ ul {
   position: relative;
   display: block;
   padding: 60px 0 60px;
-  background-color: var(--aports-base);
+  background-color: white;
   z-index: 1;
 }
 
@@ -3870,7 +3870,7 @@ ul {
 
 .footer-widget__about-text {
   color: var(--aports-white);
-  font-size: 20px;
+  font-size: 18px;
   line-height: 34px;
 }
 
@@ -3881,7 +3881,7 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .site-footer__social a {
