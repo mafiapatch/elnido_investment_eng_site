@@ -136,8 +136,7 @@ ul {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 100px 15px;
 }
 
 @media (min-width: 1200px) {
@@ -581,7 +580,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrapp;
 }
 
 .main-menu__left {
@@ -592,8 +591,8 @@ ul {
 .main-menu__logo {
   position: relative;
   display: block;
-  background-color: var(--aports-base);
-  padding: 30.5px 60px;
+  background-color: var(--aports-base)0%;
+  padding: 60px 60px;
   margin-top: -40px;
 }
 
@@ -3006,8 +3005,8 @@ ul {
   display: block;
   background-color: var(--aports-black);
   overflow: hidden;
-  padding: 200px 0 120px;
-  margin-top: -110px;
+  padding: 0 0 170px;
+  margin-top: 0px;
   z-index: 1;
 }
 
@@ -3545,7 +3544,8 @@ ul {
 .news-one {
   position: relative;
   display: block;
-  padding: 0 0 90px;
+  padding: 0px;
+  background-color:#eeeeee;
 }
 
 .news-one__single {
