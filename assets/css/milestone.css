@@ -1,0 +1,83 @@
+/* 里程碑時間軸樣式 */
+.milestone-section {
+    padding: 80px 0;
+    background-color: #eeeeee;
+}
+
+.milestone-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.milestone-content {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.milestone-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.milestone-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #EDEADB;
+    transform: translateY(-50%);
+}
+
+.year-item {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #EDEADB;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.year-item:hover {
+    background-color: #EDEADB;
+    transform: translateY(-3px);
+}
+
+.year-item.active {
+    background-color: #EDEADB;
+    border-color: #333;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 動畫效果 */
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fade.show {
+    opacity: 1;
+}
