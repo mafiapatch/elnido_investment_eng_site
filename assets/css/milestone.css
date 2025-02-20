@@ -36,6 +36,23 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    width: 100%;
+    overflow-x: scroll;
+    /* 隱藏滾動條但保持可滾動功能 */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    
+    &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+    /* 啟用滑鼠拖曳功能 */
+    cursor: grab;
+    user-select: none;
+    
+    &:active {
+        cursor: grabbing;
+    }
 }
 
 .timeline::before {
@@ -47,6 +64,22 @@
     height: 2px;
     background-color: #EDEADB;
     transform: translateY(-50%);
+}
+
+.milestone-section .timeline_navigation{
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 50%;
+    line-height: 46px;
+    font-size: 30px;
+    color: #333;
+    margin: 20px auto;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 .year-item {
