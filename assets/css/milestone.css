@@ -72,11 +72,11 @@
     display: inline-block;
     position: relative;
     text-align: center;
-    border: 2px solid #333;
+    border: 2px solid #EDEADB;
     border-radius: 50%;
     line-height: 46px;
     font-size: 30px;
-    color: #333;
+    color: #555;
     margin: 20px auto;
     background-color: #fff;
     cursor: pointer;
