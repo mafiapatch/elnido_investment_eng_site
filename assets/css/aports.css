@@ -2588,7 +2588,7 @@ ul {
 }
 
 .feature-one__single:hover .feature-one__single-inner:before {
-  background-color: #23252b;
+  background-color: #ffffff;
   transition-delay: 50ms;
 }
 
