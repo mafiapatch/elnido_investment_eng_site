@@ -13,6 +13,8 @@
     overflow: hidden;
     position: relative;
     width: 100%;
+    touch-action: pan-y;
+    max-width: 100vw;
 }
 
 .sustainability-swiper .swiper-slide {
@@ -32,7 +34,10 @@
 
 .sustainability-swiper .swiper-button-next,
 .sustainability-swiper .swiper-button-prev {
-    color: var(--aports-base);
+    color: #6c757d;
+    background-color: rgba(230, 230, 230, 0.8);
+    width: 40px;
+    height: 68px;
 }
 
 .sustainability-swiper .swiper-pagination-bullet-active {

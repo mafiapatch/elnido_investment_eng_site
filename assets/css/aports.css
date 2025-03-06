@@ -43,6 +43,10 @@
   --bs-gutter-y: 30px;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--aports-font);
   color: var(--aports-gray);
@@ -3872,6 +3876,7 @@ ul {
   color: var(--aports-white);
   font-size: 18px;
   line-height: 34px;
+  margin-top:5%
 }
 
 .site-footer__social {
@@ -8293,7 +8298,7 @@ ul {
 .why-choose__inner .swiper-slide img {
   -webkit-transition: 500ms;
   transition: 500ms;
-  opacity: .60;
+  opacity: .90;
 }
 
 .why-choose__inner .swiper-slide img:hover {

@@ -72,14 +72,31 @@
     display: inline-block;
     position: relative;
     text-align: center;
-    border: 2px solid #EDEADB;
+    border: 1px solid black;
     border-radius: 50%;
-    line-height: 46px;
+    line-height: 48px;
     font-size: 30px;
     color: #555;
     margin: 20px auto;
-    background-color: #fff;
+    
     cursor: pointer;
+
+}
+.milestone-section .timeline_navigation:hover{
+    width: 59px;
+    height: 59px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 30px;
+    color: #555;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+
 }
 
 .year-item {
@@ -100,7 +117,7 @@
 
 .year-item.active {
     background-color: #EDEADB;
-    border-color: #333;
+    border-color: #fff3d1;
     color: #333;
     font-weight: bold;
 }
