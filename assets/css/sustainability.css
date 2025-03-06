@@ -34,10 +34,11 @@
 
 .sustainability-swiper .swiper-button-next,
 .sustainability-swiper .swiper-button-prev {
-    color: #6c757d;
-    background-color: rgba(230, 230, 230, 0.8);
+    color: #a2a5ae;
+    background-color: rgba(255, 255, 255, 0.8);
     width: 40px;
     height: 68px;
+    border-radius:10px;
 }
 
 .sustainability-swiper .swiper-pagination-bullet-active {
