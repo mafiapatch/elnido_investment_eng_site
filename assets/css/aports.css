@@ -7480,7 +7480,7 @@ ul {
 .the-building {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 0px;
 }
 
 .the-building__top {
@@ -8319,6 +8319,7 @@ ul {
   display: block;
   margin-top: 20px;
 }
+
 
 
 /*--------------------------------------------------------------
