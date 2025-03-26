@@ -282,7 +282,7 @@ ul {
   position: relative;
   display: block;
   margin-top: -10px;
-  margin-bottom: 48px;
+  margin-bottom: 20px;
 }
 
 .section-title__tagline {
@@ -7221,7 +7221,7 @@ ul {
   height: 50px;
   width: 100%;
   border: none;
-  background-color: var(--aports-primary);
+  background-color: white;
   padding-left: 30px;
   padding-right: 30px;
   outline: none;
