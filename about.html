@@ -230,12 +230,13 @@
             <div class="milestone-container">
                 <div class="section-title text-center">
                     <h2 class="section-title__title">Milestones</h2>
+                    
                 </div>
                 <div class="milestone-content">
 
                     <div id="milestoneImage" class="carousel slide" data-bs-ride="carousel">
                         <!-- 輪播指示器 -->
-                        <div class="carousel-indicators">
+                        <div class="carousel-indicators vdh" style="bottom: 100px;">
                             <button type="button" data-bs-target="#milestoneImage" data-bs-slide-to="0" class="active"
                                 aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#milestoneImage" data-bs-slide-to="1"
@@ -247,25 +248,8 @@
                         
                         <div class="carousel-inner">
                             
-                            <div class="carousel-item active">
-                                <img src="assets/images/resources/about-milestones-001.jpg" class="d-block w-100"
-                                    alt="Milestone Image 1">
-                                <div class="carousel-caption d-none d-md-block">
-                                 
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/images/resources/about-milestones-002.jpg" class="d-block w-100">
-                                <div class="carousel-caption d-none d-md-block">
-                                  
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/images/resources/about-milestones-003.jpg" class="d-block w-100">
-                                <div class="carousel-caption d-none d-md-block">
-                                 
-                                </div>
-                            </div>
+                            
+                           
                         </div>
                         
 
@@ -642,124 +626,133 @@
         
 
         const yearContent = {
-            '2024': [
-                {
-                    image: 'assets/images/resources/about-milestones-2024-piece-io-01.jpg',
-                    text: 'Piece Lio Resort opened.', 
-                    
-                    
-                },
-                {
-                    image: 'assets/images/resources/about-milestones-003.jpg',
-                    text: 'Nacpan Beach Villa Resort opened.'
-                },
-                {
-                    image: 'assets/images/resources/about-milestones-2024-nacpan-beach-wedding-01.jpg',
-                    text: 'Nacpan Beach Wedding Resort opened.'
-                },
-                {
-                    image: 'assets/images/resources/about-milestones-2024-Unocha-01.jpg',
-                    text: 'Unocha Resort opened.'
-                },
-                {
-                    image: 'assets/images/resources/about-milestones-2024-sunset-market-01.jpg',
-                    text: 'Sunset Market Resort opened.'
-                }
-               
-                
-            ],
-            '2023': [
-                {
-                    image: 'assets/images/resources/about-milestones-2023-airbnb-villa.jpg',
-                    text: 'Airbnb Villa Resort opened.'
-                },
-                {
-                    image: 'assets/images/resources/about-milestones-2023-ver-de-el-nido.jpg',
-                    text: 'Ver De El Nido Resort opened.'
-                }
-                
-            ],
-            '2022': [
-                {
-                    image: 'assets/images/resources/about-milestones-2022-s-resort-el-nido.jpg',
-                    text: 'S Resort El Nido Resort opened.'
-                },
-                {
-                    image: 'assets/images/resources/about-milestones-2022-3-bros-falafel.jpg',
-                    text: '3 Bros Falafel Resort opened.'
-                }
-            ],
-            '2021': [
-                {
-                    image: 'assets/images/resources/about-milestones-2021-h-hospitality-founded-.jpg',
-                    text: 'H Hospitality Founded Resort opened.'
-                }
-                
-            ]
+    '2024': [
+        {
+            image: 'assets/images/resources/about-milestones-2024-piece-io-01.jpg',
+            title: 'Piece Lio',
+            description: 'A modern resort offering a perfect blend of nature and luxury.'
+        },
+        {
+            image: 'assets/images/resources/about-milestones-003.jpg',
+            title: 'Nacpan Beach Villa',
+            description: 'Nacpan Beach Villa Resort opened.'
+        },
+        {
+            image: 'assets/images/resources/about-milestones-2024-nacpan-beach-wedding-01.jpg',
+            title: 'Nacpan Beach Wedding',
+            description: 'Nacpan Beach Wedding Resort opened.'
+        },
+        {
+            image: 'assets/images/resources/about-milestones-2024-Unocha-01.jpg',
+            title: 'Unocha',
+            description: 'Unocha Resort opened.'
+        },
+        {
+            image: 'assets/images/resources/about-milestones-2024-sunset-market-01.jpg',
+            title: 'Sunset Market',
+            description: 'Sunset Market Resort opened.'
         }
+    ],
+    '2023': [
+        {
+            image: 'assets/images/resources/about-milestones-2023-airbnb-villa.jpg',
+            title: 'Airbnb Villa',
+            description: 'Airbnb Villa Resort opened.'
+        },
+        {
+            image: 'assets/images/resources/about-milestones-2023-ver-de-el-nido.jpg',
+            title: 'Ver De El Nido',
+            description: 'Ver De El Nido Resort opened.'
+        }
+    ],
+    '2022': [
+        {
+            image: 'assets/images/resources/about-milestones-2022-s-resort-el-nido.jpg',
+            title: 'S Resort El Nido',
+            description: 'S Resort El Nido Resort opened.'
+        },
+        {
+            image: 'assets/images/resources/about-milestones-2022-3-bros-falafel.jpg',
+            title: '3 Bros Falafel',
+            description: '3 Bros Falafel Resort opened.'
+        }
+    ],
+    '2021': [
+        {
+            image: 'assets/images/resources/about-milestones-2021-h-hospitality-founded-.jpg',
+            title: 'H Hospitality Founded',
+            description: 'H Hospitality Founded Resort opened.'
+        }
+    ]
+};
 
         document.addEventListener('DOMContentLoaded', function () {
+    $('.carousel').carousel();
 
-            $('.carousel').carousel()
+    const yearItems = document.querySelectorAll('.year-item');
 
-            const yearItems = document.querySelectorAll('.year-item');
-            const milestoneImage = document.getElementById('milestone-image');
-            const milestoneText = document.getElementById('milestone-text');
+    yearItems.forEach(item => {
+        item.addEventListener('click', function () {
+            // 移除所有年份的 active class
+            yearItems.forEach(year => year.classList.remove('active'));
 
-            yearItems.forEach(item => {
-                item.addEventListener('click', function () {
-                    // 移除所有年份的 active 类
-                    yearItems.forEach(year => year.classList.remove('active'));
+            // 為當前點擊的年份添加 active class
+            this.classList.add('active');
 
-                    // 为当前点击的年份添加 active 类
-                    this.classList.add('active');
+            // 獲取當前年份
+            const year = this.textContent.trim();
 
-                    // 获取当前点击的年份
-                    const year = this.textContent;
+            // 獲取對應的內容
+            const content = yearContent[year];
 
-                    // 从 yearContent 中获取对应该年份的內容
-                    const content = yearContent[year];
+            if (content) {
+                // 清空現有輪播內容
+                const carouselInner = document.querySelector('#milestoneImage .carousel-inner');
+                carouselInner.innerHTML = '';
 
-                    if (content) {
-                        // 清空现有轮播内容
-                        const carouselInner = document.querySelector('#milestoneImage .carousel-inner');
-                        carouselInner.innerHTML = '';
+                // 清空現有輪播指示器
+                const indicators = document.querySelector('#milestoneImage .carousel-indicators');
+                indicators.innerHTML = '';
 
-                        // 清空现有轮播指示器
-                        const indicators = document.querySelector('#milestoneImage .carousel-indicators');
-                        indicators.innerHTML = '';
+                // 添加新的輪播內容
+                content.forEach((item, index) => {
+                    // 創建輪播指示器
+                    const indicator = document.createElement('button');
+                    indicator.setAttribute('type', 'button');
+                    indicator.setAttribute('data-bs-target', '#milestoneImage');
+                    indicator.setAttribute('data-bs-slide-to', index.toString());
+                    if (index === 0) indicator.classList.add('active');
+                    indicator.setAttribute('aria-label', `Slide ${index + 1}`);
+                    indicators.appendChild(indicator);
 
-                        // 添加新的轮播内容
-                        content.forEach((item, index) => {
-                            // 创建轮播指示器
-                            const indicator = document.createElement('button');
-                            indicator.setAttribute('type', 'button');
-                            indicator.setAttribute('data-bs-target', '#milestoneImage');
-                            indicator.setAttribute('data-bs-slide-to', index.toString());
-                            if (index === 0) indicator.classList.add('active');
-                            indicator.setAttribute('aria-label', `Slide ${index + 1}`);
-                            indicators.appendChild(indicator);
+                    // 創建輪播項目
+                    const carouselItem = document.createElement('div');
+                    carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
 
-                            // 创建轮播项目
-                            const carouselItem = document.createElement('div');
-                            carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+                    carouselItem.innerHTML = `
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <img src="${item.image}" class="d-block w-100" alt="${item.title}">
+                            </div>
+                            <div class="col-md-12 intp">
+                                <h4>${item.title}</h4>
+                                <p>${item.description}</p>
+                            </div>
+                        </div>
+                    `;
 
-                            carouselItem.innerHTML = `
-                                <img src="${item.image}" class="d-block w-100" alt="Milestone Image ${index + 1}">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <p>${item.text}</p>
-                                </div>
-                            `;
-
-                            carouselInner.appendChild(carouselItem);
-                        });
-
-                        // 重新初始化轮播
-                        const carousel = new bootstrap.Carousel(document.getElementById('milestoneImage'));
-                    }
+                    carouselInner.appendChild(carouselItem);
                 });
-            });
+
+                // 重新初始化輪播
+                new bootstrap.Carousel(document.getElementById('milestoneImage'));
+            }
         });
+    });
+
+    // 預設載入最新年份
+    document.querySelector('.year-item.active')?.click();
+});
 
         // 添加鼠标拖曳功能
         document.addEventListener('DOMContentLoaded', function () {
