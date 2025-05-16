@@ -974,6 +974,8 @@ ul {
   .main-menu .mobile-nav__toggler {
     display: block !important;
   cursor: pointer;
+  font-size: 24px;     /* 整體大小 */
+  font-weight: 900;     /* 粗細（限部分圖示有效） */
   }
 }
 
