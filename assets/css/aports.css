@@ -974,8 +974,7 @@ ul {
   .main-menu .mobile-nav__toggler {
     display: block !important;
   cursor: pointer;
-  font-size: 24px;     /* 整體大小 */
-  font-weight: 900;     /* 粗細（限部分圖示有效） */
+  
   }
 }
 
@@ -8334,6 +8333,36 @@ ul {
   margin-top: 20px;
 }
 
+/*--------------------------------------------------------------
+# index vidio
+--------------------------------------------------------------*/
+.video-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.youtube-background {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* 保持原始比例 */
+  overflow: hidden;
+  pointer-events: none; /* 禁止使用者點擊 YouTube */
+}
+
+.youtube-background iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-overlay {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 30vh;
+}
 
 
 /*--------------------------------------------------------------
