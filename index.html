@@ -41,6 +41,9 @@
     <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
     <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
     <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+    <!--字體設定start-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=DM+Sans&display=swap" rel="stylesheet">
+    <!--字體設定end-->
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/aports.css" />
@@ -109,138 +112,127 @@
         </div><!-- /.stricky-header -->
         <!--vidio section start-->
         <section class="main-slider video-hero">
+            <!-- YouTube 背景 -->
             <div class="youtube-background">
               <iframe
-                src="https://www.youtube.com/embed/UdGQC2fABls?autoplay=1&mute=1&loop=1&playlist=UdGQC2fABls&controls=0&showinfo=0&modestbranding=1"
+                src="https://www.youtube.com/embed/HLO0O886njc?autoplay=1&mute=1&loop=1&playlist=HLO0O886njc&controls=0&modestbranding=1"
                 frameborder="0"
                 allow="autoplay; fullscreen"
                 allowfullscreen
               ></iframe>
             </div>
           
-            <div class="video-overlay">
-              <div class="container">
-                <h2 class="main-slider__title">H GROUP PROPERTIES</h2>
-                <p>Designing El Nido’s Future with Sustainable Prestige.</p>
+            <!-- 左側置中文案 -->
+            <div class="main-slider__overlay">
+              <div class="main-slider__content">
+                <h1 style="color: aliceblue;">PieceLio</h1>
+                <p>Your Exclusive Escape within Ayala Land’s Lio Estate — A Luxury Retreat That Earns for You.</p>
+                <a href="#contact" class="cta-button">Book Site Visit</a>
               </div>
             </div>
           </section>
           
         <!-- vidio section end-->
 
-        <!--Main Slider Start-->
-        <section class="main-slider clearfix">
-            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
-                "effect": "fade",
-                "pagination": {
-                "el": "#main-slider-pagination",
-                "type": "bullets",
-                "clickable": true
-                },
-                "navigation": {
-                "nextEl": "#main-slider__swiper-button-next",
-                "prevEl": "#main-slider__swiper-button-prev"
-                },
-                "autoplay": {
-                "delay": 5000
-                }}'>
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/bn-01-main-slider-1-4.jpg);"></div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <h2 class="main-slider__title">PieceLio</h2>
-                                        Your Exclusive Escape within Ayala Land’s Lio Estate — A Luxury Retreat That Earns for You.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/bn-01-main-slider-1-1.jpg);"></div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <h2 class="main-slider__title">H GROUP <br>PROPERTIES</h2>
-                                        Designing El Nido’s Future with Sustainable Prestige.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/bn-01-main-slider-1-2.jpg);"></div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <h2 class="main-slider__title">New launch</h2>
-                                        Exclusive new investment with exceptional design and resort living.
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(assets/images/backgrounds/bn-01-main-slider-1-3.jpg);"></div>
-                        <!-- /.image-layer -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="main-slider__content">
-                                        <h2 class="main-slider__title">Owner’s benefits</h2>
-                                        Experience VIP services, special privileges, and lucrative returns.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-
-
-
-                <!-- If we need navigation buttons -->
-                <div class="main-slider__nav">
-                    <div class="swiper-button-prev" id="main-slider__swiper-button-next">
-                        <i class="icon-left-arrow"></i>
-                    </div>
-                    <div class="swiper-button-next" id="main-slider__swiper-button-prev">
-                        <i class="icon-right-arrow"></i>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!--Main Slider End-->
 
         <!--Apartments One Start-->
-        <section class="apartments-one">
-            <div class="container">
+        <section class="apartments-one" style="background-color: #f4efeb;">
+            <div class="container" style="background-color: #f4efeb;">
                 <div class="section-title text-center">
-                    <h2 class="section-title__title">Featured Properties</h2>
+                    <h2 class="section-title__title" style="margin-bottom: 20px;">Featured Properties</h2>
                     <span>Discover our carefully curated portfolio of premier luxury real estate within the H Group collection.</span>
                 </div>
                 <div class="row">
+                    <!--Apartments One Single Start-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="apartments-one__single">
+                            <div class="apartments-one__img">
+                                <img src="assets/images/apartment/nacpan-beach-villas-001.jpg" alt="">
+                                <div class="apartments-one__title-box">
+                                    <h3 class="apartments-one__title"><a href="https://www.nacpanbeachvillas.com/"target="_blank">Nacpan Beach Villas
+                                            </a></h3>
+                                </div>
+                                <div class="apartments-one__hover">
+                                    <h3 class="apartments-one__hover-title"><a href="https://www.nacpanbeachvillas.com/"target="_blank">Nacpan Beach Villas
+                                            </a></h3>
+                                    <p class="apartments-one__hover-text">Private luxury villas set directly on the pristine shores of Nacpan Beach.</p>
+                                    <div class="apartments-one__arrow">
+                                        <a href="https://www.nacpanbeachvillas.com/"target="_blank"><span class="icon-right-arrow"></span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Apartments One Single End-->
+                    <!--Apartments One Single Start-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="apartments-one__single">
+                            <div class="apartments-one__img">
+                                <img src="assets/images/apartment/mu-nacpan-beach-001.jpg" alt="">
+                                <div class="apartments-one__title-box">
+                                    <h3 class="apartments-one__title"><a href="#">Mu Nacpan Beach
+                                            </a></h3>
+                                </div>
+                                <div class="apartments-one__hover">
+                                    <h3 class="apartments-one__hover-title"><a href="https://elnido888.com/" target="_blank">NMu Nacpan Beach
+                                            </a></h3>
+                                    <p class="apartments-one__hover-text">Your Exclusive Stake in the Future of Nacpan’s Iconic Shores. 
+                                       </p>
+                                    <div class="apartments-one__arrow">
+                                        <a href="https://elnido888.com/" target="_blank"><span class="icon-right-arrow"></span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Apartments One Single End-->
+                    <!--Apartments One Single Start-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="apartments-one__single">
+                            <div class="apartments-one__img">
+                                <img src="assets/images/apartment/piece-lio-001.jpg" alt="">
+                                <div class="apartments-one__title-box">
+                                    <h3 class="apartments-one__title"><a href="https://www.piecelio.com/"target="_blank">Piece Lio
+                                            </a></h3>
+                                </div>
+                                <div class="apartments-one__hover">
+                                    <h3 class="apartments-one__hover-title"><a href="https://www.piecelio.com/"target="_blank">Piece Lio
+                                            </a></h3>
+                                    <p class="apartments-one__hover-text">A high-yield condotel developed in partnership with 
+                                        Japan’s renowned Piece Hotel Group, offering 36 bespoke units beside Ayala Lio’s lush forest.
+                                        </p>
+                                    <div class="apartments-one__arrow">
+                                        <a href="https://www.piecelio.com/"target="_blank"><span class="icon-right-arrow"></span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Apartments One Single End-->
+                    <!--Apartments One Single Start-->
+                    <div class="col-xl-3 col-lg-6 col-md-6">
+                        <div class="apartments-one__single">
+                            <div class="apartments-one__img">
+                                <img src="assets/images/apartment/nacpan-beach-resort-001.jpg" alt="">
+                                <div class="apartments-one__title-box">
+                                    <h3 class="apartments-one__title"><a href="https://www.nacpanbeachresort.com/"target="_blank">Nacpan Beach Resort
+                                            </a></h3>
+                                </div>
+                                <div class="apartments-one__hover">
+                                    <h3 class="apartments-one__hover-title"><a href="https://www.nacpanbeachresort.com/"target="_blank">Nacpan Beach Resort
+                                            </a></h3>
+                                    <p class="apartments-one__hover-text">A sleek and contemporary hotel in the heart of El Nido town, offering modern 
+                                        comforts and effortless access to the island’s top attractions." 
+                                       </p>
+                                    <div class="apartments-one__arrow">
+                                        <a href="https://www.nacpanbeachresort.com/"target="_blank"><span class="icon-right-arrow"></span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Apartments One Single End-->
                     <!--Apartments One Single Start-->
                     <div class="col-xl-3 col-lg-6 col-md-6">
                         <div class="apartments-one__single">
@@ -317,7 +309,7 @@
                                             </a></h3>
                                 </div>
                                 <div class="apartments-one__hover">
-                                    <h3 class="apartments-one__hover-title"><a href="https://www.nacpanbeachresort.com/"target="_blank">H Hotel
+                                    <h3 class="apartments-one__hover-title"><a href="https://www.nacpanbeachresort.com/"target="_blank">Nacpan Beach Resort
                                             </a></h3>
                                     <p class="apartments-one__hover-text">A sleek and contemporary hotel in the heart of El Nido town, offering modern 
                                         comforts and effortless access to the island’s top attractions." 
@@ -337,10 +329,10 @@
         <!--Apartments One End-->
 
         <!--News One Start-->
-        <section class="news-one">
+        <section>
             <div class="container">
                 <div class="section-title text-center">
-                    <h2 class="section-title__title">News & Promotion</h2>
+                    <h2 class="section-title__title" style="margin-bottom: 40px;">Monthly Feature or News & Events</h2>
                 </div>
                 <div class="row">
                     <!--News One Single Start-->
@@ -352,8 +344,8 @@
                             <div class="news-one__content-box">
                                 
                                 <div class="news-one__content">
-                                    <p class="news-one__author">The perfect blend of paradise and modern luxury</p>
-                                    <h3 class="news-one__title"><a href="https://www.piecelio.com/"target="_blank">Abot Piece Lio</a></h3>
+                                    <p class="news-one__author">Feature different Rooms</p>
+                                    <h3 class="news-one__title"><a href="https://www.piecelio.com/"target="_blank">Suite Spotlight: Exploring the Signature One-Bedroom Layout</a></h3>
                                 </div>
                                 <div class="news-one__bottom">
                                     <a href="https://www.piecelio.com/" class="news-one__more"target="_blank"> <i
@@ -373,8 +365,8 @@
                             <div class="news-one__content-box">
                                 
                                 <div class="news-one__content">
-                                    <p class="news-one__author">El Nido's premier oceanfront resort investment opportunity</p>
-                                    <h3 class="news-one__title"><a href="#">About Mu Nacpan Beach
+                                    <p class="news-one__author">Construction Updates</p>
+                                    <h3 class="news-one__title"><a href="#">Topping Off Ceremony: Milestone Achieved for Tower B
                                             </a></h3>
                                 </div>
                                 <div class="news-one__bottom">
@@ -391,13 +383,13 @@
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
                         <div class="news-one__single">
                             <div class="news-one__img">
-                                <img src="assets/images/blog/ei-nido-news-001.jpg" alt="">
+                                <img src="assets/images/blog/about-architect-001.jpg" alt="">
                             </div>
                             <div class="news-one__content-box">
                                 
                                 <div class="news-one__content">
-                                    <p class="news-one__author">An investment opportunity in a vacation paradise</p>
-                                    <h3 class="news-one__title"><a href="experience-el-nido.html"target="_blank">Why choose El Nido?
+                                    <p class="news-one__author">About Architect</p>
+                                    <h3 class="news-one__title"><a href="experience-el-nido.html"target="_blank">Designing with Nature: A Conversation with Architect Lea Ramos
                                             </a></h3>
                                 </div>
                                 <div class="news-one__bottom">
@@ -408,170 +400,17 @@
                             </div>
                         </div>
                     </div>
-                    <!--News One Single End-->
-                    <div class="row">
-                        <!--News One Single Start-->
-                        <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                            <div class="news-one__single">
-                                <div class="news-one__img">
-                                    <img src="assets/images/blog/news_001_370x417.jpg" alt="">
-                                </div>
-                                <div class="news-one__content-box">
-                                    <div class="news-one__content">
-                                        
-                                        <h3 class="news-one__title"><a href="news-1.html">Sylvia, El Nido’s 
-                                            "Sea Turtle Mother" on Guiding Hatchlings Home</a></h3>
-                                    </div>
-                                    <div class="news-one__bottom">
-                                        <a href="news-1.html" class="news-one__more"> <i
-                                                class="fa fa-arrow-right"></i> Read More</a>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--News One Single End-->
-                        <!--中文版雜誌新聞start
-                        
-                        <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                            <div class="news-one__single">
-                                <div class="news-one__img">
-                                    <img src="assets/images/blog/news_002_370x417.jpg" alt="">
-                                </div>
-                                <div class="news-one__content-box">
-                                    <div class="news-one__content">
-                                        
-                                        <h3 class="news-one__title"><a href="news-2.html">Lorem Ipsum has been the
-                                                industry's standard dummy</a></h3>
-                                    </div>
-                                    <div class="news-one__bottom">
-                                        <a href="news-2.html" class="news-one__more"> <i
-                                                class="fa fa-arrow-right"></i> Read More</a>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                       
-                        
-                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="news-one__single">
-                            <div class="news-one__img">
-                                <img src="assets/images/blog/news_003_370x417.jpg" alt="">
-                            </div>
-                            <div class="news-one__content-box">
-                                <div class="news-one__content">
-                                    
-                                    <h3 class="news-one__title"><a href="news-3.html">From Teen Entrepreneur 
-                                        to Eco-Tourism Advocate—A Taiwanese Couple’s El Nido Journey</a></h3>
-                                </div>
-                                <div class="news-one__bottom">
-                                    <a href="news-3.html" class="news-one__more"> <i
-                                            class="fa fa-arrow-right"></i> Read More</a>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    中文版雜誌新聞end-->
-
                 </div>
             </div>
         </section>
         
-         
-
-        <!--Neighborhoods Start-->
-        <section class="neighborhoods">
-            <div class="neighborhoods-bg"
-                style="background-image: url(assets/images/backgrounds/news-two-bg.jpg);"></div>
-            <div class="container">
-                <div class="section-title text-center">
-                    <h2 class="section-title__title">Owner’s Benefits</h2>
-                    <span>H Hospitality Group provides owners a wide range of benefits.
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="neighborhoods__left">
-                            <div class="neighborhoods__faq">
-                                <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-                                    <div class="accrodion active">
-                                        <div class="accrodion-title">
-                                            <h4>Investor Privileges</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Unlock elite benefits and exclusive offers across H Hospitality Group’s properties and partner establishments.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="accrodion">
-                                        <div class="accrodion-title">
-                                            <h4>Exchange Program</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Switch up your stay, discover new horizons, and enjoy the best of H Hospitality Group’s distinctly 
-                                                    stunning destinations around El Nido.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="accrodion">
-                                        <div class="accrodion-title">
-                                            <h4>The Networks</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Build meaningful connections with fellow investors and travel enthusiasts through exclusive events and networking opportunities.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="accrodion last-child">
-                                        <div class="accrodion-title">
-                                            <h4>The Service Team</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>Enjoy personalized care from our dedicated team, committed to delivering seamless luxury and exceptional hospitality.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="news-one__bottom">
-                                        <a href="ownership-benefits.html" class="news-one__more"> <i
-                                                class="fa fa-arrow-right"></i> Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-xl-8 col-lg-7">
-                        <div class="neighborhoods__right">
-                            <div class="neighborhoods__img-box">
-                                <div class="neighborhoods__img">
-                                    <img src="assets/images/resources/owners-benefits-001.jpg" alt="">
-                                </div>
-                                
-                                
-                                
-                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Neighborhoods End-->
 
 
         <!--Brand One Start-->
         <section class="brand-one">
             <div class="container">
                 <div class="section-title text-center">
-                    <h2 class="section-title__title">Our Brands</h2>
+                    <h2 class="section-title__title" style="margin-bottom: 40px;">Our Brands</h2>
                 </div>
                 <div class="row">
                     <div class="col-xl-12">

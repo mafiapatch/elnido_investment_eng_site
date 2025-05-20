@@ -2905,6 +2905,8 @@ ul {
   display: block;
   overflow: hidden;
   z-index: 1;
+  border-radius: 12px;
+  overflow: hidden; /* 確保內部 hover 層或圖片不超出邊角 */
 }
 
 .apartments-one__img:before {
@@ -2919,7 +2921,11 @@ ul {
 }
 
 .apartments-one__img img {
+  border-radius: 12px; /* 建議值：8px~16px 可調整風格 */
+  display: block;
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .apartments-one__title-box {
@@ -2987,6 +2993,10 @@ ul {
   opacity: .70;
   padding-top: 2px;
   padding-bottom: 20px;
+  
+  
+  max-width: 90%;         /* 避免太長貼邊 */
+}
 }
 
 .apartments-one__arrow {
@@ -3562,7 +3572,7 @@ ul {
   position: relative;
   display: block;
   padding: 0px;
-  background-color:#eeeeee;
+  background-color:#edeadd;
 }
 
 .news-one__single {
@@ -3603,6 +3613,14 @@ ul {
   width: 100%;
   transition: .5s ease;
   transform: scale(1.05);
+  border-radius: 0px; /* 建議 8px~16px，依風格調整 */
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.news-one__img {
+  border-radius: 0px;
+  overflow: hidden;
 }
 
 .news-one__single:hover .news-one__img img {
@@ -8336,33 +8354,116 @@ ul {
 /*--------------------------------------------------------------
 # index vidio
 --------------------------------------------------------------*/
-.video-hero {
+.main-slider.video-hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
 
+/* YouTube 背景影片 */
 .youtube-background {
-  position: relative;
+  position: absolute;
+  top: 0; left: 0;
   width: 100%;
-  aspect-ratio: 16 / 9; /* 保持原始比例 */
-  overflow: hidden;
-  pointer-events: none; /* 禁止使用者點擊 YouTube */
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .youtube-background iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.video-overlay {
-  position: relative;
-  z-index: 1;
+/* 壓在影片上的文字區塊 */
+.main-slider__overlay {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 2;
   color: white;
-  text-align: center;
-  padding-top: 30vh;
+  max-width: 600px;
+  padding: 0;            /* 拿掉額外間距 */
+  background: none;      /* 拿掉半透明黑底 */
+  border: none;          /* 拿掉紅框 */
 }
+
+.main-slider__overlay h1 {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white; /* ✅ 確保是白色字 */
+}
+
+.main-slider__overlay p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: white; /* ✅ 內文也變白字 */
+}
+
+.main-slider__title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+  color: white;
+}
+
+.main-slider__content p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #ceae92;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+
+  /* ✅ 強制覆蓋連結的預設狀態 */
+  cursor: pointer;
+}
+
+.cta-button:visited,
+.cta-button:active,
+.cta-button:focus {
+  color: white;
+}
+
+.cta-button:hover {
+  background-color: #b89d83;
+  color: white;
+}
+/*--------------------------------------------------------------
+# 字體規範
+--------------------------------------------------------------*/
+/* 標題用明體風格 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif TC', serif;
+}
+
+/* 內文用原本的黑體（DM Sans） */
+body, p, span, li, a {
+  font-family: 'DM Sans', sans-serif;
+}
+
 
 
 /*--------------------------------------------------------------
