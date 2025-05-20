@@ -8459,10 +8459,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Noto Serif TC', serif;
 }
 
-/* 內文用原本的黑體（DM Sans） */
-body, p, span, li, a {
-  font-family: 'DM Sans', sans-serif;
-}
+
 
 
 
