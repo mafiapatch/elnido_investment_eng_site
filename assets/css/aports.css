@@ -3615,13 +3615,13 @@ ul {
   width: 100%;
   transition: .5s ease;
   transform: scale(1.05);
-  border-radius: 0px; /* 建議 8px~16px，依風格調整 */
+  border-radius: 12px; /* 建議 8px~16px，依風格調整 */
   height: auto;
   display: block;
   object-fit: cover;
 }
 .news-one__img {
-  border-radius: 0px;
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -3637,6 +3637,7 @@ ul {
   margin-left: 40px;
   margin-top: -110px;
   z-index: 2;
+  border-radius: 12px;
 }
 
 .news-one__date {
@@ -3672,7 +3673,7 @@ ul {
 .news-one__title {
   font-size: 24px;
   font-weight: 700;
-  line-height: 29px;
+  line-height: 35px;
   margin-top: 12px;
 }
 
@@ -3693,6 +3694,7 @@ ul {
   justify-content: space-between;
   padding: 10px 40px 10px;
   background-color: var(--aports-primary);
+  border-radius: 0 0 12px 12px;
 }
 
 .news-one__more {
