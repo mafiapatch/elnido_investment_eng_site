@@ -271,6 +271,7 @@ ul {
 
 .thm-btn:hover {
   color: var(--aports-white);
+  background-color: var(--aports-base);
 }
 
 .thm-btn:hover:before {
@@ -2946,7 +2947,7 @@ ul {
 }
 
 .apartments-one__title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 34px;
 }
@@ -2964,6 +2965,7 @@ ul {
   visibility: hidden;
   opacity: 0;
   z-index: 2;
+  
 }
 
 .apartments-one__single:hover .apartments-one__hover {
@@ -2973,7 +2975,7 @@ ul {
 }
 
 .apartments-one__hover-title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 34px;
 }
