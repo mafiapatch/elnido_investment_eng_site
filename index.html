@@ -84,20 +84,18 @@
                                     <a href="about.html">About Us</a>
                                 </li>
                                 <li>
-                                    <a href="our-brands.html">Our Brands</a>                       
+                                    <a href="our-brands.html">Why Ei Nido</a>                       
                                 </li>
                                 <li>
-                                    <a href="experience-el-nido.html">Experience El Nido</a>
+                                    <a href="experience-el-nido.html">View Projects</a>
                                 </li>
                                 <li>
-                                    <a href="ownership-benefits.html">Ownership & Benefits</a>
+                                    <a href="ownership-benefits.html">Owner's Update </a>
                                 </li>
                                 <li>
-                                    <a href="news-promotions.html">News & Promotions</a>
+                                    <a href="news-promotions.html">News & CSR</a>
                                 </li>
-                                <li>
-                                    <a href="careers.html">Careers</a>
-                                </li>
+                            
                                 
                             </ul>
                         </div>
@@ -426,7 +424,7 @@
                 <div class="row">
                     <div class="col-xl-12" style="margin: 20px 0px;">
                         <div class="brand-one__inner">
-                            <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
+                            <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 2000 }, "breakpoints": {
                         "0": {
                             "spaceBetween": 30,
                             "slidesPerView": 2
@@ -483,6 +481,9 @@
                                     <div class="swiper-slide">
                                         <img src="assets/images/brand/jaau-logo.jpg" alt="">
                                     </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/brand/h-g-p-logo.jpg" alt="">
+                                    </div><!-- /.swiper-slide -->
 
                                     
                                     
@@ -496,7 +497,7 @@
                 <div class="row" style="margin:20px 0px;" >
                     <div class="col-xl-12">
                         <div class="brand-one__inner">
-                            <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
+                            <div class="thm-swiper__slider swiper-container" dir="rtl" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 2000 }, "breakpoints": {
                         "0": {
                             "spaceBetween": 30,
                             "slidesPerView": 2
@@ -527,22 +528,25 @@
                                         <img src="assets/images/brand/unocha-logo.jpg" alt="">
                                     </div><!-- /.swiper-slide -->
                                     <div class="swiper-slide">
+                                        <img src="assets/images/brand/h-g-p-logo.jpg" alt="">
+                                    </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
                                         <img src="assets/images/brand/lechon-logo.jpg" alt="">
                                     </div><!-- /.swiper-slide -->
                                     <div class="swiper-slide">
                                         <img src="assets/images/brand/jaau-logo.jpg" alt="">
+                                    </div><!-- /.swiper-slide -->                                    
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/brand/nacpan-beach-glamping-logo.jpg" alt="">
+                                    </div><!-- /.swiper-slide -->
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/brand/j-boutique-hotel-logo.jpg" alt="">
                                     </div><!-- /.swiper-slide -->
                                     <div class="swiper-slide">
                                         <img src="assets/images/brand/h-hotel-el-nido-logo.jpg" alt="">
                                     </div><!-- /.swiper-slide -->
                                     <div class="swiper-slide">
                                         <img src="assets/images/brand/piece-lio-logo.jpg" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/nacpan-beach-glamping-logo.jpg" alt="">
-                                    </div><!-- /.swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/brand/j-boutique-hotel-logo.jpg" alt="">
                                     </div><!-- /.swiper-slide -->
                                     <div class="swiper-slide">
                                         <img src="assets/images/brand/nacpan-beach-resort-logo.jpg" alt="">
@@ -653,7 +657,13 @@
                                         <a href="#"><i class="fab fa-instagram"></i></a>
                                         <a href="#"><i class="fab fa-facebook"></i></a>
                                     </div>
-                                    
+                                    <div class="footer-language-switcher" style="margin-top: 20px;">
+                                        
+                                        <select id="languageSelect" onchange="changeLanguage(this.value)">
+                                          <option value="/en/">🌐 English</option>
+                                          <option value="/zh/">🌐 中文</option>
+                                        </select>
+                                    </div>
                                     
                                 </div>
                             </div>
@@ -771,6 +781,9 @@
 
 
 
+        }
+        function changeLanguage(url) {
+        window.location.href = url;
         }
     </script>
 
