@@ -251,6 +251,7 @@ ul {
   transition: all 0.5s linear;
   overflow: hidden;
   z-index: 1;
+  border-radius:6px ;
 }
 
 .thm-btn:before {
@@ -4609,6 +4610,7 @@ ul {
 .cta-one__btn-box {
   position: relative;
   display: inline-block;
+  
 }
 
 .cta-one__btn:hover {
@@ -8145,6 +8147,7 @@ ul {
   display: block;
   overflow: hidden;
   z-index: 1;
+  border-radius: 12px;
 }
 
 .team-two__img:before {
@@ -8210,6 +8213,52 @@ ul {
   position: relative;
   display: block;
   padding: 120px 0 90px;
+}
+
+/*--------------------------------------------------------------
+# 使用評論
+--------------------------------------------------------------*/
+.testimonial-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  padding: 30px 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.testimonial-author {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .testimonial-title {
+    font-size: 20px;
+  }
+  .testimonial-text {
+    font-size: 15px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -8464,18 +8513,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*--------------------------------------------------------------
-# 語系切換
---------------------------------------------------------------*/
-.footer-language-switcher select {
-  padding: 8px 16px;
-  font-size: 14px;  
-  border: none;
-  border-radius: 4px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
 
 
 /*--------------------------------------------------------------
