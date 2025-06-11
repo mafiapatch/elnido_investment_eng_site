@@ -7666,6 +7666,7 @@ ul {
   -ms-flex-pack: center;
   justify-content: center;
   z-index: 2;
+  
 }
 
 .gallery-three__icon a {
@@ -8512,8 +8513,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Noto Serif TC', serif;
 }
 
+/*--------------------------------------------------------------
+# project 幻燈片設定
+--------------------------------------------------------------*/
+#lightbox {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 9999 !important;
+}
 
+/* 禁止背景滾動 */
+body.lb-open {
+  overflow: hidden !important;
+}
 
+/* 隱藏右上角關閉按鈕 */
+.lb-closeContainer {
+  display: none !important;
+}
 
 /*--------------------------------------------------------------
 # End

@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
     <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
     <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/aports.css" />
@@ -138,8 +139,7 @@
         <!-- project m start -->
         <section class="gallery-three"style="padding: 0px;">
             <div class="container">
-                <div class="section-title text-center">
-                    
+                <div class="section-title text-center">                    
                     <h2 class="section-title__title">Project M</h2>
                     <span><br>Our resorts are crafted by world-class architects and designers, combining local cultural aesthetics with 
                         modern luxury. The architectural concept focuses on sustainability and harmony with nature, featuring natural 
@@ -154,8 +154,9 @@
                             <div class="gallery-three__img" style="border-radius: 12px;">
                                 <img src="assets/images/resources/project-m-01.jpg" alt="project m 01">
                                 <div class="gallery-three__icon">
-                                    <a class="img-popup" href="assets/images/resources/project-m-01.jpg"><span
-                                            class="fa fa-plus"></span></a>
+                                    <a href="assets/images/resources/project-m-01.jpg" data-lightbox="project-m">
+                                        <span class="fa fa-plus"></span></a>
+                                      </a>
                                 </div>
                             </div>
                         </div>
@@ -167,8 +168,8 @@
                             <div class="gallery-three__img" style="border-radius: 12px;">
                                 <img src="assets/images/resources/project-m-02.jpg" alt="project m 02">
                                 <div class="gallery-three__icon">
-                                    <a class="img-popup" href="assets/images/resources/project-m-02.jpg"><span
-                                            class="fa fa-plus"></span></a>
+                                    <a href="assets/images/resources/project-m-02.jpg" data-lightbox="project-m">
+                                        <span class="fa fa-plus"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -180,8 +181,8 @@
                             <div class="gallery-three__img" style="border-radius: 12px;">
                                 <img src="assets/images/resources/project-m-03.jpg" alt="project m 03">
                                 <div class="gallery-three__icon">
-                                    <a class="img-popup" href="assets/images/resources/project-m-03.jpg"><span
-                                            class="fa fa-plus"></span></a>
+                                    <a href="assets/images/resources/project-m-03.jpg" data-lightbox="project-m">
+                                        <span class="fa fa-plus"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -193,8 +194,8 @@
                             <div class="gallery-three__img" style="border-radius: 12px;">
                                 <img src="assets/images/resources/project-m-04.jpg" alt="project m 04">
                                 <div class="gallery-three__icon">
-                                    <a class="img-popup" href="assets/images/resources/project-m-04.jpg"><span
-                                            class="fa fa-plus"></span></a>
+                                    <a href="assets/images/resources/project-m-04.jpg" data-lightbox="project-m">
+                                        <span class="fa fa-plus"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -220,7 +221,7 @@
                             <div class="gallery-two__img" style="border-radius: 12px;">
                                 <img src="assets/images/resources/presidential-loft-01.jpg" alt="presidential-loft">
                                 <div class="gallery-two__icon">
-                                    <a class="img-popup" href="assets/images/resources/presidential-loft-01-2.jpg"><span
+                                    <a class="img-popup" href="assets/images/resources/presidential-loft-01-2.jpg" rel="presidential-loft"><span
                                             class="fa fa-plus"></span></a>
                                 </div>
                             </div>
@@ -622,6 +623,10 @@
 
     <!-- template js -->
     <script src="assets/js/aports.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+
+    
 </body>
 
 </html>
