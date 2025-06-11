@@ -8514,7 +8514,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# project 幻燈片設定
+# project lightbox 幻燈片設定
 --------------------------------------------------------------*/
 #lightbox {
   position: fixed !important;
@@ -8522,7 +8522,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
   z-index: 9999 !important;
-}
+} 
 
 /* 禁止背景滾動 */
 body.lb-open {
