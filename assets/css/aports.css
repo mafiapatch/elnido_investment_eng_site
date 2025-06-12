@@ -3107,7 +3107,7 @@ ul {
 }
 
 .faq-one-accrodion .accrodion.active .accrodion-title h4 {
-  color: var(--aports-base);
+  color: #7ba1b8;
 }
 
 .faq-one-accrodion .accrodion-title h4::before {
@@ -3134,7 +3134,7 @@ ul {
 
 .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
   content: "\f107";
-  color: var(--aports-base);
+  color: #7ba1b8;
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -7256,7 +7256,7 @@ ul {
   height: 50px;
   width: 100%;
   border: none;
-  background-color: #f4efeb;
+  background-color: #e5f8f9;
   padding-left: 30px;
   padding-right: 30px;
   outline: none;
@@ -7271,7 +7271,7 @@ ul {
   color: var(--aports-gray);
   height: 170px;
   width: 100%;
-  background-color: var(--aports-primary);
+  background-color:#e5f8f9;
   padding: 15px 30px 30px;
   border: none;
   outline: none;
@@ -7912,7 +7912,7 @@ ul {
 
 .faq-page__tab-content-box .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
   content: "\f068";
-  border: 1px solid var(--aports-base);
+  border: 1px solid #7ba1b8;
 }
 
 /*--------------------------------------------------------------
