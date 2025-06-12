@@ -1,7 +1,7 @@
 /* 里程碑時間軸樣式 */
 .milestone-section {
     padding: 80px 0;
-    background-color: #eeeeee;
+    background-color: #e5f8f9;
 }
 
 .milestone-container {
@@ -62,7 +62,7 @@
     left: 0;
     right: 0;
     height: 2px;
-    background-color: #EDEADB;
+    background-color: #ffffff;
     transform: translateY(-50%);
 }
 
@@ -105,7 +105,7 @@
     cursor: pointer;
     padding: 10px 20px;
     background-color: #fff;
-    border: 2px solid #EDEADB;
+    border: 2px solid #ffffff;
     border-radius: 30px;
     transition: all 0.3s ease;
 }
@@ -116,9 +116,9 @@
 }
 
 .year-item.active {
-    background-color: #EDEADB;
-    border-color: #fff3d1;
-    color: #333;
+    background-color: #7ba1b8;
+    border-color: #ffffff;
+    color: #ffffff;
     font-weight: bold;
 }
 
