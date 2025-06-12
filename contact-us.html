@@ -129,8 +129,7 @@
                         <h2 class="section-title__title">Feel free to write</h2>
                     </div>
                     <div class="contact-three__form-box">
-                        <form action="assets/inc/sendemail.php" class="contact-three__form contact-form-validated"
-                            novalidate="novalidate">
+                        <form id="contactForm" class="contact-three__form contact-form-validated" novalidate="novalidate">
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="contact-form__input-box">
@@ -312,7 +311,45 @@
     <script src="assets/vendors/circleType/jquery.circleType.js"></script>
     <script src="assets/vendors/circleType/jquery.lettering.min.js"></script>
 
-
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+          e.preventDefault(); // 阻止預設送出
+        
+          const form = e.target;
+        
+          const data = {
+            name: form.name.value,
+            email: form.email.value,
+            phone: form.phone.value,
+            message: form.message.value,
+          };
+        
+          // 替換成你部署好的 Google Apps Script Web App URL
+          const endpoint = "https://script.google.com/macros/s/AKfycbw_wnnbWaSn4Xn0P3sJdPG7JnheeGcQ6PsLHMPxoBCKZ-8I0hgph74zQZya7yIxm-z1/exec";
+        
+          fetch(endpoint, {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+              "Content-Type": "application/json"
+            }
+          })
+          .then(res => res.json())
+          .then(res => {
+            if (res.status === 'success') {
+              alert("感謝您的填寫！我們已收到您的訊息。");
+              form.reset(); // 清空表單
+            } else {
+              alert("發生錯誤：" + res.message);
+            }
+          })
+          .catch(error => {
+            console.error("傳送失敗", error);
+            alert("發生錯誤，請稍後再試！");
+          });
+        });
+        </script>
+        
 
 
     <!-- template js -->
