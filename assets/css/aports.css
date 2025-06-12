@@ -3730,7 +3730,7 @@ ul {
 
 .news-one__more:hover i {
   background-color: var(--aports-white);
-  color: var(--aports-white);
+  color: #7ba1b8;
 }
 
 .news-one__comments {
@@ -7737,7 +7737,7 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--aports-primary);
+  background-color:#e5f8f9;
   transform: scaleX(0.7) rotateX(20deg);
   opacity: 0;
   transition: all 0.4s linear;
