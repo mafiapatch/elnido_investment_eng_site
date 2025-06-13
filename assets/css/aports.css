@@ -8531,6 +8531,11 @@ body.lb-open {
 .lb-closeContainer {
   display: none !important;
 }
+.thm-btn.dropdown-toggle {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
 
 /*--------------------------------------------------------------
 # End
