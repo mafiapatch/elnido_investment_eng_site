@@ -8541,6 +8541,17 @@ body.lb-open {
   outline: none !important;
 }
 
+/* 假設您的 footer-widget__contact-phone 內的 a 標籤預設顏色 */
+.footer-widget__contact-phone a {
+  color: #yourCurrentBlueColor; /* 請替換成您目前看到的藍色值，或 inherit */
+  text-decoration: none; /* 如果不想要底線 */
+}
+
+/* 滑鼠懸停時的樣式 */
+.footer-widget__contact-phone a:hover {
+  color: white; /* 將文字顏色改為白色 */
+}
+
 /*--------------------------------------------------------------
 # End
 --------------------------------------------------------------*/
