@@ -3686,7 +3686,7 @@ ul {
 }
 
 .news-one__title a:hover {
-  color: var(--aports-base);
+  color: #7ba1b8;
 }
 
 .news-one__bottom {
@@ -8541,6 +8541,9 @@ body.lb-open {
   outline: none !important;
 }
 
+/*--------------------------------------------------------------
+# footer 電話連結顏色設定
+--------------------------------------------------------------*/
 /* 假設您的 footer-widget__contact-phone 內的 a 標籤預設顏色 */
 .footer-widget__contact-phone a {
   color: #yourCurrentBlueColor; /* 請替換成您目前看到的藍色值，或 inherit */
