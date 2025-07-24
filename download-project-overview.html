@@ -100,7 +100,6 @@
                                 
                             </ul>
                         </div>
-
                     </div>
                 </div>
             </nav>
@@ -117,7 +116,7 @@
             <div class="container">
                 <div class="page-header__inner">
 
-                    <h2>Contact</h2>
+                    <h2>Download Project Overview</h2>
                 </div>
             </div>
         </section>
@@ -129,8 +128,8 @@
             <div class="container">
                 <div class="contact-three__inner">
                     <div class="section-title text-center">
-                        <span class="section-title__tagline">write a message</span>
-                        <h2 class="section-title__title">Feel free to write</h2>
+                        <span class="section-title__tagline">Curious about a project</span>
+                        <h2 class="section-title__title">Download our Project Overview for a quick look</h2>
                     </div>
                     <div class="contact-three__form-box">
                         <form id="contactForm" class="contact-three__form contact-form-validated"
@@ -138,29 +137,29 @@
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="contact-form__input-box">
-                                        <input type="text" placeholder="您的姓名" name="name">
+                                        <input type="text" placeholder="Your name" name="name">
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="contact-form__input-box">
-                                        <input type="email" placeholder="電子郵件地址" name="email">
+                                        <input type="email" placeholder="Email address" name="email">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="contact-form__input-box">
-                                        <input type="text" placeholder="您的電話" name="phone">
+                                        <input type="text" placeholder="Your phone" name="phone">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="contact-form__input-box text-message-box">
-                                        <textarea name="message" placeholder="請輸入訊息"></textarea>
+                                        <textarea name="message" placeholder="Write message"></textarea>
                                     </div>
                                     <div class="contact-form__btn-box">
-                                        <button type="submit" class="thm-btn contact-form__btn">發送訊息</button>
+                                        <button type="submit" class="thm-btn contact-form__btn">Send a Message</button>
                                     </div>
                                 </div>
                             </div>
@@ -434,9 +433,9 @@
             <div class="modal-icon success">
                 <i class="fas fa-check-circle"></i>
             </div>
-            <h3 class="modal-title">訊息發送成功！</h3>
-            <p class="modal-message">感謝您聯絡我們，我們會盡快回覆您。</p>
-            <button class="modal-button" onclick="closeModal('successModal')">確定</button>
+            <h3 class="modal-title">Message Sent Successfully!</h3>
+            <p class="modal-message">Thank you for contacting us. We will get back to you soon.</p>
+            <button class="modal-button" onclick="closeModal('successModal')">OK</button>
         </div>
     </div>
 
@@ -446,9 +445,9 @@
             <div class="modal-icon error">
                 <i class="fas fa-exclamation-circle"></i>
             </div>
-            <h3 class="modal-title">哎呀！發生錯誤了</h3>
-            <p class="modal-message">發送訊息時發生錯誤，請稍後再試。</p>
-            <button class="modal-button" onclick="closeModal('errorModal')">重新嘗試</button>
+            <h3 class="modal-title">Oops! Something went wrong</h3>
+            <p class="modal-message">There was an error sending your message. Please try again later.</p>
+            <button class="modal-button" onclick="closeModal('errorModal')">Try Again</button>
         </div>
     </div>
 
@@ -533,7 +532,7 @@
             formData.append("phone", form.phone.value);
             formData.append("message", form.message.value);
 
-            fetch(`https://script.google.com/macros/s/AKfycbxq_wK3e7Jd1Q2XrwIWG8YO3K5aAmolLXvoKJK0bCS4uKquSMqz0-QoLO75sj1dINAycw/exec`, {
+            fetch("https://script.google.com/macros/s/AKfycbyRfy9zvoNjH-GR1PJKBeheEgC-x-Jag0K98oBw1AJo07HmQ-PtiPzOaKIaJa1bGWyN/exec", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
