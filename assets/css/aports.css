@@ -5589,13 +5589,13 @@ ul {
 .floor-plan-two__tab-content {
   position: relative;
   display: block;
-  margin-top: -9px;
+  margin-top: 20px;
 }
 
 .floor-plan-two__tab-content-img {
   position: relative;
   display: block;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 .floor-plan-two__tab-content-img img {
