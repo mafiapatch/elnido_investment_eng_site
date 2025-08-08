@@ -8556,6 +8556,16 @@ body.lb-open {
 }
 
 /*--------------------------------------------------------------
+# Experience El Nido cta tag
+--------------------------------------------------------------*/
+.thm-btn.cta-one__btn {
+    line-height: 1.7; /* Adjust this value as needed */
+    /* You might also want to adjust padding or font-size if the text is too large */
+    /* padding: 10px 15px; */ /* Example adjustment */
+    /* font-size: 16px; */ /* Example adjustment */
+}
+
+/*--------------------------------------------------------------
 # End
 --------------------------------------------------------------*/
 
