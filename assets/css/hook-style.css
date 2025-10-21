@@ -1,0 +1,28 @@
+/* Hook styles */
+.hook {
+    display: none !important; /* 預設隱藏 */
+}
+
+/* 只在大螢幕桌機顯示 (寬度大於 1024px) */
+@media (min-width: 1025px) {
+    .hook {
+        display: block !important;
+    }
+}
+
+/* Hook 連結樣式 */
+.hook-link {
+    font-size: 14px;
+    margin-right: 10px;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.hook-link:last-child {
+    margin-right: 0;
+}
+
+/* Hover 效果 - 白色 */
+.hook-link:hover {
+    color: #ffffff !important;
+}
