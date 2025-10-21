@@ -13,8 +13,8 @@
 /* Hook 連結樣式 */
 .hook-link {
     font-size: 14px;
-    margin-right: 10px;
-    color: inherit;
+    margin-right: 20px;
+    color: #7ba1b8;
     transition: color 0.3s ease;
 }
 
