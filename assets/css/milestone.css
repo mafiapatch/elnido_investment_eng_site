@@ -131,4 +131,7 @@
 .fade.show {
     opacity: 1;
 }
+.carousel-inner {
+  transition: opacity 0.4s ease;
+}
 

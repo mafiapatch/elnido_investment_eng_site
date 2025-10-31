@@ -244,7 +244,7 @@
             </div>
 
         </section>
-        
+        <!--Milestone Section end-->
         
         <!--評論開始-->
         <section>
@@ -738,203 +738,123 @@
     <!-- template js -->
     <script src="assets/js/aports.js"></script>
     <script>
-        
-
-        const yearContent = {
-    '2024': [
-        {
-            image: 'assets/images/resources/about-milestones-2024-piece-io-01.jpg',
-            title: 'Piece Lio',
-            
-        },
-        {
-            image: 'assets/images/resources/about-milestones-003.jpg',
-            title: 'Nacpan Beach Villa',
-            
-        },
-        {
-            image: 'assets/images/resources/about-milestones-2024-nacpan-beach-wedding-01.jpg',
-            title: 'Nacpan Beach Wedding',
-            
-        },
-        {
-            image: 'assets/images/resources/about-milestones-2024-Unocha-01.jpg',
-            title: 'Unocha',
-            
-        },
-        {
-            image: 'assets/images/resources/about-milestones-2024-sunset-market-01.jpg',
-            title: 'Sunset Market',
-            
-        }
-    ],
-    '2023': [
-        {
-            image: 'assets/images/resources/about-milestones-2023-airbnb-villa.jpg',
-            title: 'Airbnb Villa',
-            description: 'Airbnb Villa Resort opened.'
-        },
-        {
-            image: 'assets/images/resources/about-milestones-2023-ver-de-el-nido.jpg',
-            title: 'Ver De El Nido',
-            
-        }
-    ],
-    '2022': [
-        {
-            image: 'assets/images/resources/about-milestones-2022-s-resort-el-nido.jpg',
-            title: 'S Resort El Nido',
-            
-        },
-        {
-            image: 'assets/images/resources/about-milestones-2022-3-bros-falafel.jpg',
-            title: '3 Bros Falafel',
-            
-        }
-    ],
-    '2021': [
-        {
-            image: 'assets/images/resources/about-milestones-2021-h-hospitality-founded-.jpg',
-            title: 'H Hospitality Founded',
-            
-        }
-    ]
-};
-
-        document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     $('.carousel').carousel();
 
     const yearItems = document.querySelectorAll('.year-item');
+    const carousel = document.getElementById('milestoneImage');
+    const carouselInner = carousel.querySelector('.carousel-inner');
+    const indicators = carousel.querySelector('.carousel-indicators');
+
+    const yearContent = {
+        '2024': [
+            { image: 'assets/images/resources/about-milestones-2024-piece-io-01.jpg', title: 'Piece Lio' },
+            { image: 'assets/images/resources/about-milestones-003.jpg', title: 'Nacpan Beach Villa' },
+            { image: 'assets/images/resources/about-milestones-2024-nacpan-beach-wedding-01.jpg', title: 'Nacpan Beach Wedding' },
+            { image: 'assets/images/resources/about-milestones-2024-Unocha-01.jpg', title: 'Unocha' },
+            { image: 'assets/images/resources/about-milestones-2024-sunset-market-01.jpg', title: 'Sunset Market' }
+        ],
+        '2023': [
+            { image: 'assets/images/resources/about-milestones-2023-airbnb-villa.jpg', title: 'Airbnb Villa' },
+            { image: 'assets/images/resources/about-milestones-2023-ver-de-el-nido.jpg', title: 'Ver De El Nido' }
+        ],
+        '2022': [
+            { image: 'assets/images/resources/about-milestones-2022-s-resort-el-nido.jpg', title: 'S Resort El Nido' },
+            { image: 'assets/images/resources/about-milestones-2022-3-bros-falafel.jpg', title: '3 Bros Falafel' }
+        ],
+        '2021': [
+            { image: 'assets/images/resources/about-milestones-2021-h-hospitality-founded-.jpg', title: 'H Hospitality Founded' }
+        ]
+    };
+
+    function loadYearContent(year) {
+        const content = yearContent[year];
+        if (!content) return;
+
+        // 淡出
+        carouselInner.style.opacity = 0;
+
+        setTimeout(() => {
+            // 清空舊內容
+            carouselInner.innerHTML = '';
+            indicators.innerHTML = '';
+
+            // 建立新內容
+            content.forEach((item, index) => {
+                const indicator = document.createElement('button');
+                indicator.setAttribute('type', 'button');
+                indicator.setAttribute('data-bs-target', '#milestoneImage');
+                indicator.setAttribute('data-bs-slide-to', index.toString());
+                if (index === 0) indicator.classList.add('active');
+                indicators.appendChild(indicator);
+
+                const carouselItem = document.createElement('div');
+                carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+                carouselItem.innerHTML = `
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                            <img src="${item.image}" class="d-block w-100" alt="${item.title}">
+                        </div>
+                        <div class="col-md-12 intp">
+                            <h4>${item.title}</h4>
+                        </div>
+                    </div>
+                `;
+                carouselInner.appendChild(carouselItem);
+            });
+
+            // 重新初始化 carousel
+            new bootstrap.Carousel(carousel);
+
+            // 淡入
+            carouselInner.style.opacity = 1;
+        }, 200); // 200ms 過渡時間
+    }
 
     yearItems.forEach(item => {
         item.addEventListener('click', function () {
-            // 移除所有年份的 active class
-            yearItems.forEach(year => year.classList.remove('active'));
-
-            // 為當前點擊的年份添加 active class
+            yearItems.forEach(y => y.classList.remove('active'));
             this.classList.add('active');
-
-            // 獲取當前年份
-            const year = this.textContent.trim();
-
-            // 獲取對應的內容
-            const content = yearContent[year];
-
-            if (content) {
-                // 清空現有輪播內容
-                const carouselInner = document.querySelector('#milestoneImage .carousel-inner');
-                carouselInner.innerHTML = '';
-
-                // 清空現有輪播指示器
-                const indicators = document.querySelector('#milestoneImage .carousel-indicators');
-                indicators.innerHTML = '';
-
-                // 添加新的輪播內容
-                content.forEach((item, index) => {
-                    // 創建輪播指示器
-                    const indicator = document.createElement('button');
-                    indicator.setAttribute('type', 'button');
-                    indicator.setAttribute('data-bs-target', '#milestoneImage');
-                    indicator.setAttribute('data-bs-slide-to', index.toString());
-                    if (index === 0) indicator.classList.add('active');
-                    indicator.setAttribute('aria-label', `Slide ${index + 1}`);
-                    indicators.appendChild(indicator);
-
-                    // 創建輪播項目
-                    const carouselItem = document.createElement('div');
-                    carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
-
-                    carouselItem.innerHTML = `
-                        <div class="row align-items-center">
-                            <div class="col-md-12">
-                                <img src="${item.image}" class="d-block w-100" alt="${item.title}">
-                            </div>
-                            <div class="col-md-12 intp">
-                                <h4>${item.title}</h4>
-                                
-                            </div>
-                        </div>
-                    `;
-
-                    carouselInner.appendChild(carouselItem);
-                });
-
-                // 重新初始化輪播
-                new bootstrap.Carousel(document.getElementById('milestoneImage'));
-            }
+            loadYearContent(this.dataset.year);
         });
     });
 
-    // 預設載入最新年份
-    document.querySelector('.year-item.active')?.click();
+    // 預設載入 2024
+    const defaultYear = '2024';
+    const defaultItem = Array.from(yearItems).find(item => item.dataset.year === defaultYear);
+    if (defaultItem) {
+        defaultItem.classList.add('active');
+        loadYearContent(defaultYear);
+    }
+
+    // 滑動邏輯 (保留)
+    const timeline = document.querySelector('.timeline');
+    let isDown = false;
+    let startX, scrollLeft;
+    timeline.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - timeline.offsetLeft;
+        scrollLeft = timeline.scrollLeft;
+    });
+    timeline.addEventListener('mouseleave', () => (isDown = false));
+    timeline.addEventListener('mouseup', () => (isDown = false));
+    timeline.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - timeline.offsetLeft;
+        const walk = (x - startX) * 2;
+        timeline.scrollLeft = scrollLeft - walk;
+    });
+
+    document.querySelector('.timeline_navigation.prev').addEventListener('click', () => {
+        timeline.scrollBy({ left: -50, behavior: 'smooth' });
+    });
+    document.querySelector('.timeline_navigation.next').addEventListener('click', () => {
+        timeline.scrollBy({ left: 50, behavior: 'smooth' });
+    });
 });
+</script>
 
-        // 添加鼠标拖曳功能
-        document.addEventListener('DOMContentLoaded', function () {
-            const timeline = document.querySelector('.timeline');
-            let isDown = false;
-            let startX;
-            let scrollLeft;
-
-            // 鼠标按下事件
-            timeline.addEventListener('mousedown', (e) => {
-                isDown = true;
-                timeline.classList.add('active');
-                startX = e.pageX - timeline.offsetLeft;
-                scrollLeft = timeline.scrollLeft;
-            });
-
-            // 鼠标离开事件
-            timeline.addEventListener('mouseleave', () => {
-                isDown = false;
-                timeline.classList.remove('active');
-            });
-
-            // 鼠标放开事件
-            timeline.addEventListener('mouseup', () => {
-                isDown = false;
-                timeline.classList.remove('active');
-            });
-
-            // 鼠标移动事件
-            timeline.addEventListener('mousemove', (e) => {
-                if (!isDown) return;
-                e.preventDefault();
-                const x = e.pageX - timeline.offsetLeft;
-                const walk = (x - startX) * 2; // 滚动速度
-                timeline.scrollLeft = scrollLeft - walk;
-            });
-
-            // 为timeline_navigation按鈕添加点击事件
-            const prevBtn = document.querySelector('.timeline_navigation.prev');
-            const nextBtn = document.querySelector('.timeline_navigation.next');
-
-            // 点击prev按鈕向左滚动
-            prevBtn.addEventListener('click', () => {
-                // 计算新的scrollLeft值,最小为0
-                const newScrollLeft = Math.max(0, timeline.scrollLeft - 50);
-                // 使用平滑滚动效果
-                timeline.scrollTo({
-                    left: newScrollLeft,
-                    behavior: 'smooth'
-                });
-            });
-
-            // 点击next按鈕向右滚动
-            nextBtn.addEventListener('click', () => {
-                console.log(123)
-                // 计算新的scrollLeft值,最大为scrollWidth减去可视宽度
-                const maxScroll = timeline.scrollWidth - timeline.clientWidth;
-                const newScrollLeft = Math.min(maxScroll, timeline.scrollLeft + 50);
-                // 使用平滑滚动效果
-                timeline.scrollTo({
-                    left: newScrollLeft,
-                    behavior: 'smooth'
-                });
-            });
-
-        });
-    </script>
 </body>
 
 </html>
