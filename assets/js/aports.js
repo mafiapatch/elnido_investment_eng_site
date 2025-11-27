@@ -270,34 +270,43 @@
   }
 
   // Accrodion
-  if ($(".accrodion-grp").length) {
+if ($(".accrodion-grp").length) {
     var accrodionGrp = $(".accrodion-grp");
     accrodionGrp.each(function () {
-      var accrodionName = $(this).data("grp-name");
-      var Self = $(this);
-      var accordion = Self.find(".accrodion");
-      Self.addClass(accrodionName);
-      Self.find(".accrodion .accrodion-content").hide();
-      Self.find(".accrodion.active").find(".accrodion-content").show();
-      accordion.each(function () {
-        $(this)
-          .find(".accrodion-title")
-          .on("click", function () {
-            if ($(this).parent().hasClass("active") === false) {
-              $(".accrodion-grp." + accrodionName)
-                .find(".accrodion")
-                .removeClass("active");
-              $(".accrodion-grp." + accrodionName)
-                .find(".accrodion")
-                .find(".accrodion-content")
-                .slideUp();
-              $(this).parent().addClass("active");
-              $(this).parent().find(".accrodion-content").slideDown();
-            }
-          });
-      });
+        var accrodionName = $(this).data("grp-name");
+        var Self = $(this);
+        var accordion = Self.find(".accrodion");
+        Self.addClass(accrodionName);
+        Self.find(".accrodion .accrodion-content").hide();
+        Self.find(".accrodion.active").find(".accrodion-content").show();
+
+        accordion.each(function () {
+            $(this)
+                .find(".accrodion-title")
+                .on("click", function () {
+                    var currentAccrodion = $(this).parent();
+
+                    // 檢查當前項目是否已是開啟狀態
+                    var isActive = currentAccrodion.hasClass("active");
+
+                    // 1. 收起群組中所有其他的項目 (保持互斥性)
+                    $(".accrodion-grp." + accrodionName)
+                        .find(".accrodion")
+                        .not(currentAccrodion) // 排除當前點擊的項目
+                        .removeClass("active")
+                        .find(".accrodion-content")
+                        .slideUp();
+
+                    // 2. 切換當前項目的狀態：
+                    // 如果已開啟，則收起；如果已收起，則開啟。
+                    currentAccrodion.toggleClass("active");
+                    currentAccrodion.find(".accrodion-content").slideToggle();
+
+                    // 如果不需要群組互斥，則可以省略步驟 1。
+                });
+        });
     });
-  }
+}
 
 
   if ($(".scroll-to-target").length) {
