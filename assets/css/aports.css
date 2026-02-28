@@ -43,7 +43,8 @@
   --bs-gutter-y: 30px;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -251,7 +252,7 @@ ul {
   transition: all 0.5s linear;
   overflow: hidden;
   z-index: 1;
-  border-radius:6px ;
+  border-radius: 6px;
 }
 
 .thm-btn:before {
@@ -700,15 +701,15 @@ ul {
   .stricky-header .main-menu__list>li>ul,
   .stricky-header .main-menu__list>li>ul>li>ul {
     display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background: rgba(0, 0, 0, 0.9);
-  padding: 1em;
-  flex-direction: column;
-  text-align: right;
-  width: 200px;
-  z-index: 998;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1em;
+    flex-direction: column;
+    text-align: right;
+    width: 200px;
+    z-index: 998;
   }
 }
 
@@ -957,7 +958,7 @@ ul {
   color: var(--aports-base);
 }
 
-.main-menu .mobile-nav__toggler {  
+.main-menu .mobile-nav__toggler {
   color: #7ba1b8;
   display: block !important;
   position: absolute;
@@ -976,8 +977,8 @@ ul {
 @media (min-width: 1200px) {
   .main-menu .mobile-nav__toggler {
     display: block !important;
-  cursor: pointer;
-  
+    cursor: pointer;
+
   }
 }
 
@@ -2909,7 +2910,8 @@ ul {
   overflow: hidden;
   z-index: 1;
   border-radius: 12px;
-  overflow: hidden; /* 確保內部 hover 層或圖片不超出邊角 */
+  overflow: hidden;
+  /* 確保內部 hover 層或圖片不超出邊角 */
 }
 
 .apartments-one__img:before {
@@ -2924,7 +2926,8 @@ ul {
 }
 
 .apartments-one__img img {
-  border-radius: 12px; /* 建議值：8px~16px 可調整風格 */
+  border-radius: 12px;
+  /* 建議值：8px~16px 可調整風格 */
   display: block;
   width: 100%;
   height: auto;
@@ -2967,7 +2970,7 @@ ul {
   visibility: hidden;
   opacity: 0;
   z-index: 2;
-  
+
 }
 
 .apartments-one__single:hover .apartments-one__hover {
@@ -2997,10 +3000,10 @@ ul {
   opacity: .70;
   padding-top: 2px;
   padding-bottom: 20px;
-  
-  
-  max-width: 90%;         /* 避免太長貼邊 */
-}
+
+
+  max-width: 90%;
+  /* 避免太長貼邊 */
 }
 
 .apartments-one__arrow {
@@ -3576,7 +3579,7 @@ ul {
   position: relative;
   display: block;
   padding: 0px;
-  background-color:#edeadd;
+  background-color: #edeadd;
 }
 
 .news-one__single {
@@ -3617,11 +3620,13 @@ ul {
   width: 100%;
   transition: .5s ease;
   transform: scale(1.05);
-  border-radius: 12px; /* 建議 8px~16px，依風格調整 */
+  border-radius: 12px;
+  /* 建議 8px~16px，依風格調整 */
   height: auto;
   display: block;
   object-fit: cover;
 }
+
 .news-one__img {
   border-radius: 12px;
   overflow: hidden;
@@ -3695,7 +3700,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px 10px;
-  background-color:#7ba1b8;
+  background-color: #7ba1b8;
   border-radius: 0 0 12px 12px;
 }
 
@@ -3913,7 +3918,7 @@ ul {
   color: var(--aports-white);
   font-size: 18px;
   line-height: 34px;
-  margin-top:5%
+  margin-top: 5%
 }
 
 .site-footer__social {
@@ -4613,7 +4618,7 @@ ul {
   display: inline-block;
   width: 100%;
   height: 100%;
-  
+
 }
 
 .cta-one__btn:hover {
@@ -4623,10 +4628,12 @@ ul {
 .cta-one__btn:before {
   background: #fcf5f0;
 }
+
 .cta-one__btn-box .thm-btn {
-  
+
   height: 100%;
-  display: flex; /* 使用 Flexbox 讓按鈕文字置中 */
+  display: flex;
+  /* 使用 Flexbox 讓按鈕文字置中 */
   justify-content: center;
   align-items: center;
 }
@@ -6476,7 +6483,7 @@ ul {
 --------------------------------------------------------------*/
 .news-page {
   position: relative;
-  display: block; 
+  display: block;
   padding: 0px;
 }
 
@@ -7280,7 +7287,7 @@ ul {
   color: var(--aports-gray);
   height: 170px;
   width: 100%;
-  background-color:#e5f8f9;
+  background-color: #e5f8f9;
   padding: 15px 30px 30px;
   border: none;
   outline: none;
@@ -7602,7 +7609,7 @@ ul {
   position: relative;
   display: block;
   padding: 0px 0px 110px;
-  background:#f8f9fa;
+  background: #f8f9fa;
 }
 
 .gallery-three .container {
@@ -7673,7 +7680,7 @@ ul {
   -ms-flex-pack: center;
   justify-content: center;
   z-index: 2;
-  
+
 }
 
 .gallery-three__icon a {
@@ -7746,7 +7753,7 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color:#e5f8f9;
+  background-color: #e5f8f9;
   transform: scaleX(0.7) rotateX(20deg);
   opacity: 0;
   transition: all 0.4s linear;
@@ -8264,6 +8271,7 @@ ul {
   .testimonial-title {
     font-size: 20px;
   }
+
   .testimonial-text {
     font-size: 15px;
   }
@@ -8276,7 +8284,7 @@ ul {
   position: relative;
   display: block;
   padding: 0px;
-  background-color:#EDEADB;
+  background-color: #EDEADB;
   z-index: 1;
 }
 
@@ -8315,7 +8323,7 @@ ul {
   position: relative;
   display: block;
   padding: 0px;
-  background-color:#ffffff;
+  background-color: #ffffff;
   z-index: 1;
   margin-bottom: 50px;
 }
@@ -8358,7 +8366,7 @@ ul {
 
 @media (min-width: 1500px) {
   .experience {
-    
+
     padding: 100px 150px;
   }
 }
@@ -8401,12 +8409,13 @@ ul {
 /*--------------------------------------------------------------
 # Ownership & Benefits
 --------------------------------------------------------------*/
-.ingf{
+.ingf {
   position: relative;
   display: block;
-  margin-top:50px;
+  margin-top: 50px;
 }
-.intp{
+
+.intp {
   position: relative;
   display: block;
   margin-top: 20px;
@@ -8424,23 +8433,21 @@ ul {
 /* YouTube 背景影片 */
 .youtube-background {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: 0;
   pointer-events: none;
-  object-fit: cover;
 }
 
-.youtube-background iframe {
-  width: 100vw;
-  height: 56.25vw;
-  min-height: 100vh;
-  min-width: 177.77vh;
+.youtube-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
 }
 
 /* 壓在影片上的文字區塊 */
@@ -8452,9 +8459,12 @@ ul {
   z-index: 2;
   color: white;
   max-width: 600px;
-  padding: 0;            /* 拿掉額外間距 */
-  background: none;      /* 拿掉半透明黑底 */
-  border: none;          /* 拿掉紅框 */
+  padding: 0;
+  /* 拿掉額外間距 */
+  background: none;
+  /* 拿掉半透明黑底 */
+  border: none;
+  /* 拿掉紅框 */
 }
 
 .main-slider__overlay h1 {
@@ -8462,14 +8472,16 @@ ul {
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: white; /* ✅ 確保是白色字 */
+  color: white;
+  /* ✅ 確保是白色字 */
 }
 
 .main-slider__overlay p {
   font-family: 'DM Sans', sans-serif;
   font-size: 20px;
   line-height: 1.6;
-  color: white; /* ✅ 內文也變白字 */
+  color: white;
+  /* ✅ 內文也變白字 */
 }
 
 .main-slider__title {
@@ -8513,11 +8525,17 @@ ul {
   background-color: #b89d83;
   color: white;
 }
+
 /*--------------------------------------------------------------
 # 字體規範
 --------------------------------------------------------------*/
 /* 標題用明體風格 */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Noto Serif TC', serif;
 }
 
@@ -8530,7 +8548,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
   z-index: 9999 !important;
-} 
+}
 
 /* 禁止背景滾動 */
 body.lb-open {
@@ -8556,27 +8574,32 @@ body.lb-open {
 --------------------------------------------------------------*/
 /* 假設您的 footer-widget__contact-phone 內的 a 標籤預設顏色 */
 .footer-widget__contact-phone a {
-  color: #yourCurrentBlueColor; /* 請替換成您目前看到的藍色值，或 inherit */
-  text-decoration: none; /* 如果不想要底線 */
+  color: inherit;
+  /* 請替換成您目前看到的藍色值，或 inherit */
+  text-decoration: none;
+  /* 如果不想要底線 */
 }
 
 /* 滑鼠懸停時的樣式 */
 .footer-widget__contact-phone a:hover {
-  color: white; /* 將文字顏色改為白色 */
+  color: white;
+  /* 將文字顏色改為白色 */
 }
 
 /*--------------------------------------------------------------
 # Experience El Nido cta tag
 --------------------------------------------------------------*/
 .thm-btn.cta-one__btn {
-    line-height: 1.7; /* Adjust this value as needed */
-    /* You might also want to adjust padding or font-size if the text is too large */
-    /* padding: 10px 15px; */ /* Example adjustment */
-    /* font-size: 16px; */ /* Example adjustment */
+  line-height: 1.7;
+  /* Adjust this value as needed */
+  /* You might also want to adjust padding or font-size if the text is too large */
+  /* padding: 10px 15px; */
+  /* Example adjustment */
+  /* font-size: 16px; */
+  /* Example adjustment */
 }
 
 
 /*--------------------------------------------------------------
 # End
 --------------------------------------------------------------*/
-

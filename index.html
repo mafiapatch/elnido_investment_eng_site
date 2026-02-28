@@ -157,10 +157,13 @@
         </div><!-- /.stricky-header -->
         <!--vidio section start-->
         <section class="main-slider video-hero" style="position: relative; height: 100vh; overflow: hidden;">
-            <!-- WebM 背景影片 -->
-            <video class="youtube-background" autoplay muted loop playsinline>
-                <source src="video.webm" type="video/webm">
-            </video>
+            <!-- YouTube 背景 -->
+            <div class="youtube-background"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;">
+                <video autoplay muted loop playsinline>
+                    <source src="video.webm" type="video/webm">
+                </video>
+            </div>
 
             <!-- 可加上文字疊層區塊（選擇性） -->
             <div class="main-slider__overlay">
